@@ -1,0 +1,87 @@
+﻿@model HomeModel
+@section Styles
+{
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="/DataImporter/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+}
+
+<!-- Navbar -->
+<nav class="main-sidebar-custom navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <partial name="Partial/_LeftNavbarPartial" />
+    <!-- Left navbar links -->
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-none d-sm-inline-block">
+            <partial name="_LoginPartial"/>
+        </li>
+    </ul>
+    <!-- Right navbar links -->
+
+</nav>
+<!-- /.navbar -->
+
+
+<section class="content">
+
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-4 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>@Model.Groups</h3>
+                        <p>Groups</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                        <p>Imports</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-upload"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>44</h3>
+
+                        <p>Exports</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-arrow-down-a"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<div class="text-center">
+    <h1 class="display-4">Welcome to</h1>
+    <h3> Data Importer Exporter Tools</h3>
+</div>
+
+
+
+@section Scripts
+{
+    <!-- overlayScrollbars -->
+    <script src="/DataImporter/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+}

@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Web", "DataImporter.Web\DataImporter.Web.csproj", "{C050EE5E-835F-46FA-A3C0-009408623484}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Data", "DataImporter.Data\DataImporter.Data.csproj", "{DD665442-9016-43D7-9F83-AC6D4D3DC883}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Transfer", "DataImporter.Transfer\DataImporter.Transfer.csproj", "{19EC0F11-C699-45FF-985F-5425553619C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.User", "DataImporter.User\DataImporter.User.csproj", "{E3C47A17-C510-49EB-A28F-8D059F8D52BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Common", "DataImporter.Common\DataImporter.Common.csproj", "{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B290AE60-EAE3-4AD6-95E2-D39F177B2C87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Worker", "DataImporter.Worker\DataImporter.Worker.csproj", "{937B725E-3300-4255-9987-1067C9102838}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.ExcelFileReader", "DataImporter.ExcelFileReader\DataImporter.ExcelFileReader.csproj", "{001482F9-6C39-410E-9449-ED89D9295966}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Transfer.Tests", "DataImporter.Transfer.Tests\DataImporter.Transfer.Tests.csproj", "{0427253C-770D-4867-A598-EB57DC8EAE5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Web.Tests", "DataImporter.Web.Tests\DataImporter.Web.Tests.csproj", "{101CC668-5B9E-430A-92B8-E770976323A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.ExcelFileCreate", "DataImporter.ExcelFileCreate\DataImporter.ExcelFileCreate.csproj", "{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C050EE5E-835F-46FA-A3C0-009408623484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C050EE5E-835F-46FA-A3C0-009408623484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C050EE5E-835F-46FA-A3C0-009408623484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C050EE5E-835F-46FA-A3C0-009408623484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD665442-9016-43D7-9F83-AC6D4D3DC883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD665442-9016-43D7-9F83-AC6D4D3DC883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD665442-9016-43D7-9F83-AC6D4D3DC883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD665442-9016-43D7-9F83-AC6D4D3DC883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EC0F11-C699-45FF-985F-5425553619C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EC0F11-C699-45FF-985F-5425553619C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EC0F11-C699-45FF-985F-5425553619C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EC0F11-C699-45FF-985F-5425553619C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C47A17-C510-49EB-A28F-8D059F8D52BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C47A17-C510-49EB-A28F-8D059F8D52BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C47A17-C510-49EB-A28F-8D059F8D52BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C47A17-C510-49EB-A28F-8D059F8D52BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0427253C-770D-4867-A598-EB57DC8EAE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0427253C-770D-4867-A598-EB57DC8EAE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0427253C-770D-4867-A598-EB57DC8EAE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0427253C-770D-4867-A598-EB57DC8EAE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101CC668-5B9E-430A-92B8-E770976323A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101CC668-5B9E-430A-92B8-E770976323A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101CC668-5B9E-430A-92B8-E770976323A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101CC668-5B9E-430A-92B8-E770976323A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0427253C-770D-4867-A598-EB57DC8EAE5E} = {B290AE60-EAE3-4AD6-95E2-D39F177B2C87}
+		{101CC668-5B9E-430A-92B8-E770976323A2} = {B290AE60-EAE3-4AD6-95E2-D39F177B2C87}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF5A7C7D-BCC1-4263-A854-7FBE0CD2193C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿@model ListGroupModel
+<!-- Modal -->
+<div class="modal fade" id="modalEmailGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send Group Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <form class="form-horizontal" id="emailForm" asp-action="EmailGroup" asp-controller="Group" method="post" asp-antiforgery="true">
+                <div class="modal-body text-center mb-1">
+                    <div class="md-form ml-0 mr-0">
+                        <div class="col-md-12">
+                            <input asp-for="GroupName" type="text" class="form-control" id="emailId" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button asp-action="EmailGroup" asp-controller="Group" id="emailButton" type="submit" class="btn btn-info">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
+<!--Modal: Login with Avatar Form-->

@@ -1,0 +1,89 @@
+﻿@model UploadModel
+
+@section Styles
+{
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="/DataImporter/plugins/daterangepicker/daterangepicker.css">
+}
+
+<nav class="main-sidebar-custom navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <partial name="Partial/_LeftNavbarPartial" />
+    <!-- Left navbar links -->
+</nav>
+
+<section class="content">
+
+    <div class="card-header">
+
+        <div class="container-fluid ">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- Horizontal Form -->
+                    <div class="card card-info">
+                        <form class="form-inline" asp-action="Create" asp-controller="Customer" method="post" asp-antiforgery="true">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+
+                                    <div class="form-group row col-sm-4  ">
+                                        <label asp-for="DateTo" class="col-sm-4 col-form-label">Date To</label>
+                                        <div class="input-group date col-sm-10" id="reservationdate1" data-target-input="nearest">
+                                            <input asp-for="DateTo" type="datetime" class="form-control datetimepicker-input" id="startdate"
+                                                   data-target="#reservationdate1" />
+                                            <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row col-sm-4  ">
+                                        <label asp-for="DateFrom" class="col-sm-4 col-form-label">Date From</label>
+                                        <div class="input-group date col-sm-10" id="reservationdate2" data-target-input="nearest">
+                                            <input asp-for="DateFrom" type="datetime" class="form-control datetimepicker-input" id="startdate"
+                                                   data-target="#reservationdate2" />
+                                            <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4" style="padding-top:22px">
+                                        <label class="col-sm-4 col-form-label "></label>
+                                        <div class="col-sm-10">
+                                            <button type="button" class="btn btn btn-primary float-md-right ">search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+</section>
+@section Scripts
+{
+    <!-- date-range-picker -->
+    <script src="/DataImporter/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <script>
+
+        $(function () {
+            $('#reservationdate1').datetimepicker({
+                format: 'L'
+            });
+
+            $('#reservationdate2').datetimepicker({
+                format: 'L'
+            });
+
+          
+        });
+        //Date picker
+        
+    </script>
+}
